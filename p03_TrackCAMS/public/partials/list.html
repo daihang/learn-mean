@@ -1,0 +1,39 @@
+<div class="page-header">
+          <h1>My CAMS Activites</h1>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <a href="#/new" class="btn btn-default"><span class="glyphicon 
+glyphicon-plus"></span> New CAMS Activity</a>
+          </div>
+          <div class="col-xs-7">
+            <input type="text" class="form-control" ng-model="query" 
+placeholder="Search for an activity">
+          </div>
+        </div>
+        <div class="row"><div class="col-xs-12">
+<hr></div></div>
+        <div class="row" ng-switch on="activities.length">
+          <ul ng-switch-when="0">
+            <li><em>No CAMS activity yet. Would you like to
+ <a href="#/new">create one</a>?</li>
+          </ul>
+            <div class="row">
+				<div class="col-xs-12">
+					<div class="col-sm-4" ng-repeat="activity in activities | filter:query">          
+					  <div class="panel panel-info">
+						<div class="panel-heading">
+						  <h3 class="panel-title">{{activity.type}}</h3>
+						</div>
+						<div class="panel-body">
+						  {{activity.description}}
+						  <div>
+						  ---{{activity.time}}
+						  </div>
+						</div>
+					  </div>
+					</div><!-- /.col-sm-4 -->
+				</div>
+			</div>			  
+        </div>
+        <p>&nbsp;</p>

@@ -1,0 +1,11 @@
+applications:
+- services:
+  - track-cams-db
+  host: track-cams-dev
+  disk: 1024M
+  name: track-cams
+  command: node app.js
+  path: .
+  domain: ng.bluemix.net
+  mem: 256M
+  instances: 1

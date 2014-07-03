@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<title>div</title>
+<style>
+body,div
+{color:#000000; font:"Times New Roman", Times, serif; font-size:12px;}
+#userInfo{
+ width: 98%;
+	  line-height: 25px;
+	  border: 1px solid #009; }
+#left {
+	  float: left;
+	  width: 50%;
+	  background-color:#fff;}
+#right{
+float:right;
+width:50%;
+background-color:#fff;}
+#down{
+height:30px;
+float:left;
+width:100%;}
+#divTd{
+	  width:90%;
+	  padding-top: 2px;
+	  padding-right: 5px;
+	  padding-bottom: 3px;
+	  padding-left: 10px;}
+.borderTop{border-top: #009 1px solid;}
+input{	border: 1px solid #666;background-color:#fff; height:22px; }
+</style>
+</head>
+<body>
+<div id="userInfo">
+   <div id="top" style="height:25px; background-color:#009"></div>
+   <div id="left" style="BORDER-RIGHT: #009 1px solid; ">  
+     <div id="divTd">您的帐号: YYXXSS</div>
+	  <div id="divTd"   class="borderTop">注册：</div>
+	  <div id="divTd">金钱：124 </div>
+	  <div id="divTd">主题：0 </div>  
+   </div>
+   <div  id="right">
+     <div id="divTd">会员总数：7004 人 </div>
+     <div id="divTd"  class="borderTop">今日发帖：1419 篇</div>
+     <div id="divTd">昨日发帖：18篇 </div>
+     <div id="divTd">最高日发帖：106 篇</div>
+   </div>  
+   <form name="form1" method="post" action=""> 
+    <div id="down" class="borderTop">Yahoo!.... 
+     <input name="textfield" type="text" size="15">&nbsp;
+     <input type="button" value="搜一搜">
+    </div> 
+   </form>
+</div>
+</body>
+</html>
